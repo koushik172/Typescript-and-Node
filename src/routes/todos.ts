@@ -1,8 +1,10 @@
 import { Router } from "express";
 
-import Todo from "../models/todo.js";
+import Todo from "../models/todo";
 
 const todoRouter = Router();
+
+type RequestText = { text: string }
 
 const todos: Todo[] = [];
 
